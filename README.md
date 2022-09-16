@@ -1,1 +1,2 @@
 # Optical-Amplifier-Erbium-Doped-Fiber-Amplifier-EDFA-
+Les amplificateurs à fibre dopée erbium  sont des amplificateurs optiques qui utilisent une    fibre optique dopée comme support de gain pour amplifier un signal optique. Ils sont liés aux lasers à fibre. Le signal à amplifier et un laser de pompage sont multiplexés dans la fibre dopée, et le signal est amplifié par interaction avec les ions dopants comme le montre la figure suivante: ![Board](https://user-images.githubusercontent.com/22806623/190587741-2a6e0ef9-970e-4526-a7fa-4f031f202cb6.png)
