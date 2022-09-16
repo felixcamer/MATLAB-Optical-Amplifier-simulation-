@@ -11,3 +11,4 @@ Afin de faciliter la comparaison des différentes méthodes numériques et de fa
           - le step de la longueur de la fibre etc.
        
 Dans la suite de ce rapport nous détaillerons en premier point le principe de fonctionnement des  amplificateurs dopées à l'erbium et par la suite , nous détaillerons les étapes d'implémentation de l’interface graphique et en fin nous mettrons en applications l’interface graphique en cherchant les longueurs optimales des quatres différentes fibres : RadIX, Telcom, nLIGTH_Er80-8\128 et nLIGTH_Er110-4\128.
+![equation](https://user-images.githubusercontent.com/22806623/190590427-aad065e8-d0a4-449f-a3fc-55afda5d184f.JPG)
