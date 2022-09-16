@@ -2,8 +2,7 @@
 
 
 
-
-https://user-images.githubusercontent.com/22806623/190622282-0bc9116c-c02c-4aba-95a3-7afc7c6d654d.mp4
+https://user-images.githubusercontent.com/22806623/190622538-b9082fd4-cc5e-495e-9822-211fa117a341.mp4
 
 
 Les amplificateurs à fibre dopée erbium  sont des amplificateurs optiques qui utilisent une    fibre optique dopée comme support de gain pour amplifier un signal optique. Ils sont liés aux lasers à fibre. Le signal à amplifier et un laser de pompage sont multiplexés dans la fibre dopée, et le signal est amplifié par interaction avec les ions dopants comme le montre la figure suivante: ![imag1](https://user-images.githubusercontent.com/22806623/190588084-87236de8-47a1-4c61-a74b-cec65b7c673a.jpg)
