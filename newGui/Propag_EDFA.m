@@ -1,7 +1,7 @@
 % =========================================================================
 % Name : Propag_EDFA
-% Author : Arnaud Fernandez
-% Version du : 03/06/2020
+% Author : Barkoum Betra Felix
+% Version du : 03/06/2022
 %
 % Doped fiber : IXblue Rad ou Telecom [qqs m]
 % Signal laser : [1530 - 1565 nm]
