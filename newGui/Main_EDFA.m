@@ -3,8 +3,8 @@
 
 % =========================================================================
 % Name : Main_EDFA
-% Author : Arnaud Fernandez
-% Version du : 03/06/2020
+% Author : Barkoum Btera Felix
+% Version du : 03/04/2022
 %
 % Doped fiber : IXblue Rad or TelecomIX
 % Signal laser : [1530 - 1565 nm]
@@ -94,14 +94,14 @@ switch choix_fibre
             % title('IX fiber : Telecom');
           % end
 
-        N=5e24;	     % (ions.m^(-3))	Densité d’ions Er3+
-        Sep=0;       % (m2)	Section efficace d’émission de la pompe @ 980 nm 
-        Gp=0.87;     % (sd) Facteur de recouvrement entre le mode de la pompe et l’aire dopée
-        Gs=0.52;	 % (sd) Facteur de recouvrement entre le mode du signal et l’aire dopée
-        Aeff=5.73e-12;  % (m2)	Aire de la zone dopée
-        ap=1.612e-3; % (m-1)	Pertes linéiques de la pompe
-        as=1.612e-3; % (m-1)	Pertes linéiques de la sonde
-        Tau=10e-3;   % (s) Durée de vie du niveau métastable
+        N=5e24;	     % (ions.m^(-3))	DensitÃ© dâ€™ions Er3+
+        Sep=0;       % (m2)	Section efficace dâ€™Ã©mission de la pompe @ 980 nm 
+        Gp=0.87;     % (sd) Facteur de recouvrement entre le mode de la pompe et lâ€™aire dopÃ©e
+        Gs=0.52;	 % (sd) Facteur de recouvrement entre le mode du signal et lâ€™aire dopÃ©e
+        Aeff=5.73e-12;  % (m2)	Aire de la zone dopÃ©e
+        ap=1.612e-3; % (m-1)	Pertes linÃ©iques de la pompe
+        as=1.612e-3; % (m-1)	Pertes linÃ©iques de la sonde
+        Tau=10e-3;   % (s) DurÃ©e de vie du niveau mÃ©tastable
         ng=1.5;      % (sd) fiber group index
 
         % End load parameters  iXTelecom ------------------------------------------
@@ -152,13 +152,13 @@ switch choix_fibre
             title('IX fiber : Rad hard');
           end
 
-        N=1.4e25;       % (ions.m^(-3))	Densité d’ions Er3+
-        Sep=0;          % (m2)	Section efficace d’émission de la pompe @ 980 nm 
-        Gp=0.88;        % (sd) Facteur de recouvrement entre le mode de la pompe et l’aire dopée
-        Gs=0.52;        % (sd) Facteur de recouvrement entre le mode du signal et l’aire dopée
-        Aeff=8.043e-12; % (m2)	Aire de la zone dopée
-        ap=1.3816e-3;   % (m-1)	Pertes linéiques de la pompe
-        as=1.3816e-3;   % (m-1)	Pertes linéiques de la sonde
+        N=1.4e25;       % (ions.m^(-3))	DensitÃ© dâ€™ions Er3+
+        Sep=0;          % (m2)	Section efficace dâ€™Ã©mission de la pompe @ 980 nm 
+        Gp=0.88;        % (sd) Facteur de recouvrement entre le mode de la pompe et lâ€™aire dopÃ©e
+        Gs=0.52;        % (sd) Facteur de recouvrement entre le mode du signal et lâ€™aire dopÃ©e
+        Aeff=8.043e-12; % (m2)	Aire de la zone dopÃ©e
+        ap=1.3816e-3;   % (m-1)	Pertes linÃ©iques de la pompe
+        as=1.3816e-3;   % (m-1)	Pertes linÃ©iques de la sonde
         Tau=10e-3;      % (s) Metastable level lifetime
         ng=1.5;         % (sd) fiber group index
 		
@@ -213,13 +213,13 @@ switch choix_fibre
 		  lambda=lambda*1e-9;
 		  
         %%CONSTANTS HERE
-			N=3.5e25;       % (ions.m^(-3))	Densit?d’ions Er3+
-			Sep=0;          % (m2)	Section efficace d’émission de la pompe @ 980 nm 
-			Gp=0.76346;        % (sd) Facteur de recouvrement entre le mode de la pompe et l’aire dopée
-			Gs=0.75621;        % (sd) Facteur de recouvrement entre le mode du signal et l’aire dopée
-			Aeff=6.4e-23; % (m2)	Aire de la zone dopée
-			ap=8.4962e-3;   % (m-1)	Pertes linéiques de la pompe  1.3816e-3  8.5  8.1
-			as=8.0756e-3 ;   % (m-1)	Pertes linéiques de la sonde
+			N=3.5e25;       % (ions.m^(-3))	Densit?dâ€™ions Er3+
+			Sep=0;          % (m2)	Section efficace dâ€™Ã©mission de la pompe @ 980 nm 
+			Gp=0.76346;        % (sd) Facteur de recouvrement entre le mode de la pompe et lâ€™aire dopÃ©e
+			Gs=0.75621;        % (sd) Facteur de recouvrement entre le mode du signal et lâ€™aire dopÃ©e
+			Aeff=6.4e-23; % (m2)	Aire de la zone dopÃ©e
+			ap=8.4962e-3;   % (m-1)	Pertes linÃ©iques de la pompe  1.3816e-3  8.5  8.1
+			as=8.0756e-3 ;   % (m-1)	Pertes linÃ©iques de la sonde
 			Tau=9e-3;      % (s) Metastable level lifetime
 			ng=1.5;         % (sd) fiber group index
 		
@@ -271,13 +271,13 @@ switch choix_fibre
 		  lambda=lambda*1e-9;
 		  
         %%CONSTANTS HERE
-			N=8e25;       % (ions.m^(-3))	Densit?d’ions Er3+
-			Sep=0;          % (m2)	Section efficace d’émission de la pompe @ 980 nm 
-			Gp=0.45523;        % (sd) Facteur de recouvrement entre le mode de la pompe et l’aire dopée
-			Gs=0.44333;        % (sd) Facteur de recouvrement entre le mode du signal et l’aire dopée
-			Aeff=2.95e-23; % (m2)	Aire de la zone dopée
-			ap=15.412e-3;   % (m-1)	Pertes linéiques de la pompe
-			as=11.516e-3;   % (m-1)	Pertes linéiques de la sonde
+			N=8e25;       % (ions.m^(-3))	Densit?dâ€™ions Er3+
+			Sep=0;          % (m2)	Section efficace dâ€™Ã©mission de la pompe @ 980 nm 
+			Gp=0.45523;        % (sd) Facteur de recouvrement entre le mode de la pompe et lâ€™aire dopÃ©e
+			Gs=0.44333;        % (sd) Facteur de recouvrement entre le mode du signal et lâ€™aire dopÃ©e
+			Aeff=2.95e-23; % (m2)	Aire de la zone dopÃ©e
+			ap=15.412e-3;   % (m-1)	Pertes linÃ©iques de la pompe
+			as=11.516e-3;   % (m-1)	Pertes linÃ©iques de la sonde
 			Tau=9e-3;      % (s) Metastable level lifetime
 			ng=1.5;         % (sd) fiber group index
 		
@@ -325,13 +325,13 @@ switch choix_fibre
             title('IX fiber : Rad hard');
           end
 
-			N=1.4e25;       % (ions.m^(-3))	Densit?d’ions Er3+
-			Sep=0;          % (m2)	Section efficace d’émission de la pompe @ 980 nm 
-			Gp=0.88;        % (sd) Facteur de recouvrement entre le mode de la pompe et l’aire dopée
-			Gs=0.52;        % (sd) Facteur de recouvrement entre le mode du signal et l’aire dopée
-			Aeff=8.043e-12; % (m2)	Aire de la zone dopée
-			ap=1.3816e-3;   % (m-1)	Pertes linéiques de la pompe
-			as=1.3816e-3;   % (m-1)	Pertes linéiques de la sonde
+			N=1.4e25;       % (ions.m^(-3))	Densit?dâ€™ions Er3+
+			Sep=0;          % (m2)	Section efficace dâ€™Ã©mission de la pompe @ 980 nm 
+			Gp=0.88;        % (sd) Facteur de recouvrement entre le mode de la pompe et lâ€™aire dopÃ©e
+			Gs=0.52;        % (sd) Facteur de recouvrement entre le mode du signal et lâ€™aire dopÃ©e
+			Aeff=8.043e-12; % (m2)	Aire de la zone dopÃ©e
+			ap=1.3816e-3;   % (m-1)	Pertes linÃ©iques de la pompe
+			as=1.3816e-3;   % (m-1)	Pertes linÃ©iques de la sonde
 			Tau=10e-3;      % (s) Metastable level lifetime
 			ng=1.5;         % (sd) fiber group index
 
