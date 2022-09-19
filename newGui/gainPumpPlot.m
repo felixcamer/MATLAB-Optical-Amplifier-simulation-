@@ -1,0 +1,41 @@
+%Load data here
+ tmp = strcat('.\res_ai\EDFres9');
+ load(tmp);
+ fs=10; % fontsize
+cla (handles.axes3,'reset');
+axes(handles.axes3);
+if(gain_unit)
+	Color='b';
+	Color2='r';
+	[AZ,H1,H2]=plotyy(Gain_evol(jj,:),Ps_evol(jj,:),Gain_evol(jj,:),Ps_evol(jj,:));
+	set(H1,'Color',Color,'LineWidth',1.5);
+	set(H2,'Color',Color2,'LineWidth',1.5);
+	set(AZ(1),'Fontsize',fs,'FontName','times','YColor',Color);
+	set(AZ(2),'Fontsize',fs,'FontName','times','YColor',Color2);
+	set(AZ(1),'box','off')
+	xlabel(AZ(1),'z(m)','Fontsize',fs);
+	ylabel(AZ(1),' Gs(dB)','Fontsize',fs);
+	set(AZ(2),'box','off')
+	ylabel(AZ(2) , 'Pp(w)','Fontsize',fs);
+	grid on;
+
+else
+
+	Color='b';
+	Color2='r';
+	[AZ,H1,H2]=plotyy([0:dz:Lf-dz],10.^((Gain_evol(jj,:))/20),[0:dz:Lf-dz],10.^((Gain_P_evol(jj,:))/20));
+	set(H1,'Color',Color,'LineWidth',1.5);
+	set(H2,'Color',Color2,'LineWidth',1.5);
+	set(AZ(1),'Fontsize',fs,'FontName','times','YColor',Color);
+	set(AZ(2),'Fontsize',fs,'FontName','times','YColor',Color2);
+	set(AZ(1),'box','off')
+	xlabel(AZ(1),'z(m)','Fontsize',fs);
+	ylabel(AZ(1),'Signal Gain (nat)','Fontsize',fs);
+	set(AZ(2),'box','off')
+	ylabel(AZ(2) , 'Pump Gain (nat)','Fontsize',fs);
+	grid on;
+
+end
+
+
+

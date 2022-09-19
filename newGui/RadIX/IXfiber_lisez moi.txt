@@ -1,0 +1,24 @@
+
+% PART 1 ----------------------------------
+
+
+%Spectroscopic data on Er-doped RAD fiber
+
+%tau_Er:=10 ms  { upper-state lifetime }
+
+%Erbium absorption cross section
+
+Lambda, s_a_Er
+
+
+% PART 2 -------------------------------------
+
+
+Erbium absorption and emission cross section
+
+
+Lambda, s_a_Er, s_e_Er
+
+
+
+

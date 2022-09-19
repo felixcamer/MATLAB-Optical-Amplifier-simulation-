@@ -1,0 +1,114 @@
+%Load data here
+ global sim_nb_;
+ global power;
+ global length_;
+ global power_step;
+ global length_step;
+ global fix_check;
+  global start_power_;
+ global end_power_;
+ 
+ 
+ global end_length_;
+ global start_length_;
+
+
+fs=10; % fontsize
+cla (handles.axes3,'reset');
+axes(handles.axes3);
+%Load data here
+
+tab_fn_h = [];
+tab_fn= [];
+lf = 0;
+power_p = 0;
+tab_fs_hh = [];
+tab_fn_hh = [];
+n = 0;
+step_mw = power_step;
+mod_index = ((end_power_-start_power_)/power_step)+1;
+len_tab = [];
+if(fix_check)
+
+   %disp('one');
+	for j = 1:sim_nb_
+
+		tmp=strcat('.\res_ai\EDFres',int2str(j));
+		load(tmp);
+		
+		F_= (2*lbd_s*lbd_s*lbd_s/(h*c*c*dlbd)) * (Ps0(1,jj)* ApLs(1,jj)/(PsL(1,jj)-ApLs(1,jj)));
+		tab_fn = [tab_fn , 10*log10(F_)];
+
+		if(mod(j,mod_index)==0)
+          n = n+1;
+          
+        len_tab = [len_tab Lf];
+		  tab_fn_hh(n,:) = tab_fn;
+          
+        
+		  tab_fn = [];
+		 
+		end
+    end
+		
+	 % This script plots force vs displacement stored in the Data struct. 
+			%h = figure; 
+			hold on
+			h = legend('show','location','best');
+			set(h,'FontSize',10);
+			
+			for u= 1:end_length_ -start_length_+ 1 % Data is a struct containing my data.
+					
+				name = strcat('Lf= ',int2str(len_tab(u)),'m');
+				plot(start_power_:power_step:end_power_,tab_fn_hh(u,:),'-','LineWidth',1.5,'MarkerSize',1.5,'DisplayName',name);
+				
+			end
+		   xlabel('PsIN(mw)');
+		   ylabel('NF(dB)');
+           grid on;
+	       %saveas(gcf,'fig','jpg');
+	
+else 
+
+%disp('Two');
+		
+	for j = 1:sim_nb_
+
+		tmp=strcat('.\res_ai\EDFres',int2str(j));
+		load(tmp);
+		
+		F_= (2*lbd_s*lbd_s*lbd_s/(h*c*c*dlbd)) * (Ps0(1,jj)* ApLs(1,jj)/(PsL(1,jj)-ApLs(1,jj)));
+		tab_fn = [tab_fn , 10*log10(F_)];
+
+		if(mod(j,mod_index)==0)
+          n = n+1;
+          
+          len_tab = [len_tab Lf];
+		  tab_fn_hh(n,:) = tab_fn;
+          
+        
+		 
+		  tab_fn = [];
+		 
+		end
+    end
+	
+	 % This script plots force vs displacement stored in the Data struct. 
+			%h = figure; 
+			hold on
+			h = legend('show','location','best');
+			set(h,'FontSize',10);
+			
+			for u= 1:end_length_ -start_length_+ 1 % Data is a struct containing my data.
+					
+				name = strcat('Lf= ',int2str(len_tab(u)),'m');
+				plot(start_power_:power_step:end_power_,tab_fn_hh(u,:),'-','LineWidth',1.5,'MarkerSize',1.5,'DisplayName',name);
+				
+			end
+		   xlabel('PpIN(mw)');
+		   ylabel('NF(dB)');
+           grid on;
+		  % saveas(h,'figure','jpg');
+		  %saveas(gcf,'fig','jpg');
+end
+
